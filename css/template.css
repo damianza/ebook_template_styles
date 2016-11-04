@@ -1,21 +1,36 @@
+/* BASIC RESET */
 body
 {
 	margin: 20px;
 	line-height: 1.5em;
-	font-family: sans-serif;
 }
 
 img { max-width: 100%; }
 p { margin-top: 0.5em; }
+p + p { text-indent: 1em; }
+a { text-decoration: none; }
 
 figure
 {
 	page-break-inside: avoid;
-	margin: 1em auto;
+	margin: 0 auto;
+	text-align: center;
 }
 
-sub, sup { line-height: 1; }
-ul, ol { padding-left: 1em; }
+figcaption
+{
+	font-size: 0.8em;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+sup, sub
+{
+	font-size: 0.8em;
+	line-height: 1;
+}
+
+sup a, sub a { text-decoration: none !important; }
 
 /* BOXES */
 .box
@@ -42,6 +57,9 @@ ul, ol { padding-left: 1em; }
 
 .box p:first-child { margin-top: 0; }
 
+[class^=box] p:first-child {margin-top:0;}
+
+
 /* INLINE BORDERS */
 .border
 {
@@ -64,6 +82,23 @@ h3 { font-size: 1.5em; }
 h4 { font-size: 1.3em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1em; }
+
+.chap_num
+{
+	font-weight: bold;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.chap_title
+{
+	margin-top: 0;
+	font-weight: normal;
+	display: block;
+}
+
+/* usually applied to a h1 or h2 */
+.prelim_head { text-align: center; }
 
 /* TABLES */
 table
@@ -149,7 +184,7 @@ table td.bor-hideb
 .w_33 { width: 33%; }
 .w_50 { width: 50%; }
 
-/* use this class when using a table for layout only, ie nor borders and minimal padding */
+/* use this table class when using a table for layout only, ie no borders and minimal padding */
 .tbl_layout { border: 0; }
 
 .tbl_layout td
@@ -216,6 +251,45 @@ table td.bor-hideb
 	border-right: 2px solid black;
 }
 
+/* LISTS */
+ul, ol { padding-left: 1em; }
+
+li
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1em;
+}
+
+li li
+{
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+li p
+{
+	font-size: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+dl
+{
+	padding: 0;
+	margin: 0;
+	text-indent: 0;
+}
+
+dt
+{
+	font-weight: bold;
+	font-family: serif;
+	margin-top: 10px;
+}
+
+dd { margin-left: 1em; }
+
 /* LISTS - MANUAL List level is determined by enclosing div class, e.g. div class="list_lv1". p class="list" a generic class for list paragraph span class="list_num" a generic class for list number e.g: 
 <div class="list_lv1">
 	<p class="list">
@@ -275,7 +349,7 @@ table td.bor-hideb
 .list_lv2 .box ol { margin-left: 1em; }
 .list_lv2 .box .uscore { margin-left: 1em; }
 
-/* PAGE NUMBER */
+/* PAGE NUMBERS */
 .pg
 {
 	text-align: center;
@@ -283,20 +357,14 @@ table td.bor-hideb
 }
 
 /* MODIFIERS */
-.img-center
-{
-	margin: 0 auto;
-	text-align: center;
-}
-
 .txt-center { text-align: center; }
 .txt-right { text-align: right; }
 .txt-underline { text-decoration: underline; }
 .txt-middle { vertical-align: middle; }
-.txt-large { font-size: 110%; }
-.txt-xlarge { font-size: 120%; }
-.txt-small { font-size: 90%; }
-.txt-xsmall { font-size: 80%; }
+.txt-l { font-size: 110%; }
+.txt-xl { font-size: 120%; }
+.txt-sm { font-size: 90%; }
+.txt-xsm { font-size: 80%; }
 
 .uscore
 {
@@ -388,6 +456,7 @@ table td.bor-hideb
 	padding: 0 1em 0 0;
 }
 
+/* NAV HTML */
 nav ol { list-style-type: none; }
 nav a { text-decoration: none; }
 
@@ -400,7 +469,169 @@ nav a { text-decoration: none; }
 	text-align: center;
 }
 
-.cover img { width: 100%; }
+.cover img
+{
+	width: 100%;
+	height: auto;
+}
+
+/* BLOCKQUOTE */
+blockquote
+{
+	padding: 0 2em;
+	margin: 1em 0;
+	border: none;
+	font-family: sans-serif;
+}
+
+blockquote p
+{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* SONGS */
+.song { page-break-inside: avoid; }
+
+.song_title
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+.song_verse
+{
+	margin-top: 0;
+	text-align: center;
+}
+
+.song_title img
+{
+	display: inline;
+	height: 1em;
+	width: auto;
+	margin: 0 1em;
+}
+
+.song_verse img
+{
+	display: inline;
+	height: 1em;
+	width: auto;
+	margin: 0 1em;
+}
+
+/* POEMS */
+.poem { margin: 2em 1em; }
+.poem_title { margin-bottom: .5em; }
+
+.poem_body
+{
+	margin: 0 1em;
+	text-indent: -1em;
+}
+
+.poem_author { margin-top: .5em; }
+
+/* TITLE PAGES */
+.tp { padding: 50px; }
+
+.tp_title
+{
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.tp_subtitle
+{
+	font-size: 1em;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.tp_author
+{
+	text-align: center;
+	margin-top: 20%;
+	font-style: italic;
+}
+
+/* PHOTOGRAPHIC PLATES */
+.img-plate_land
+{
+	width: 99%;
+	text-align: center;
+	page-break-inside: avoid;
+}
+
+.img-plate_lands img
+{
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.img-plate_port
+{
+	height: 99%;
+	width: 100%;
+	text-align: center;
+	page-break-inside: avoid;
+}
+
+.img-plate_port img
+{
+	display: inline-block;
+	height: 100%;
+	width: auto;
+	margin: 0 auto;
+}
+
+
+/* FOOTNOTES */
+/* enclosing div */
+.footnotes
+{
+	margin-top: 2em;
+	margin-bottom: 0;
+	padding-top: 1em;
+	border-top: 1px solid #ccddcc;
+}
+
+/* p style */
+.footnote { font-size: 0.8em; }
+.footnotes a:link, .footnotes a:visited { text-decoration: none !important; }
+.footnotes a:focus { text-decoration: underline; }
+
+.fn_anchor
+{
+	vertical-align: super;
+	font-size: .8em;
+	padding-left: .2em;
+	padding-right: .2em;
+	color: inherit;
+}
+
+/* CITE */
+cite
+{
+	display: block;
+	font-style: normal;
+	font-size: 0.7em;
+	text-indent: 0;
+}
+
+/* ASIDE */
+.aside
+{
+	float: left;
+	width: 35%;
+	margin: 1em 0 1em 1EM;
+	text-indent: 0;
+	font-size: 1em;
+	display: block;
+}
 
 /* Only used to give instructions in the text, not for final output */
 ._note_
