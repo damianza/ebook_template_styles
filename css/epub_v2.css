@@ -1,0 +1,507 @@
+body {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    margin-top: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+
+.chap_num {
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.chap_title {
+    margin-top: 0;
+    font-weight: normal;
+    display: block;
+}
+
+blockquote {
+    padding: 0 2em;
+    margin: 1em 0;
+    border: none;
+    font-family: sans-serif;
+}
+
+blockquote p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+sup a, sup {
+    text-decoration: none !important;
+    font-size: 0.8em;
+}
+
+sub {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.verse_title {
+    font-weight: bold;
+    margin-bottom: 0.75em;
+}
+
+.imprint .tp_logo {
+    margin: 0 auto;
+    text-align: center;
+    width: 175px;
+}
+
+img {
+    width: 100%;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.spab {
+    margin-top: 15px;
+}
+
+.tp {
+    padding: 50px;
+}
+
+.tp_title {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.tp_subtitle {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.tp_author {
+    text-align: center;
+    margin-top: 20%;
+    font-style: italic;
+}
+
+dl {
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+}
+
+dt {
+    font-weight: bold;
+    font-family: serif;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 1em;
+}
+
+/* PLATES SECTION */
+
+.img-plate_land {
+	width: 99%;
+   text-align: center;
+    page-break-inside: avoid;
+}
+
+.img-plate_lands img {
+    display: inline-block;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.img-plate_port {
+	height: 99%;
+    width: 100%;
+    text-align: center;
+    page-break-inside: avoid;
+}
+
+.img-plate_port img {
+    display: inline-block;
+    height: 100%;
+	width: auto;
+    margin: 0 auto;
+}
+
+.cover_img {
+	width: 100%;
+	height: auto;
+
+}
+
+.cover_img img {
+	width: 100%;
+}
+
+
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote
+{
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	-epub-hyphens: auto;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+body { margin: 20px; }
+
+p
+{
+	text-align: justify;
+	margin-top: 1em;
+}
+
+a { text-decoration: none; }
+img { max-width: 100%; }
+
+figure
+{
+	page-break-inside: avoid;
+	width: 80%;
+	margin: 1em auto;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6
+{
+	line-height: 1.5;
+	text-indent: 0em;
+	margin-left: 0em;
+}
+
+h1
+{
+	font-size: 175%;
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+h2
+{
+	font-size: 150%;
+	text-align: center;
+	margin-top: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+h3
+{
+	font-size: 125%;
+	margin-top: 1em;
+	margin-bottom: 0.3em;
+}
+
+h4
+{
+	font-size: 115%;
+	text-align: left;
+	margin-top: 1.3em;
+	margin-bottom: 0.3em;
+}
+
+h5
+{
+	margin-top: 1.3em;
+	margin-bottom: 0em;
+}
+
+h6
+{
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+}
+
+.section_head
+{
+	page-break-inside: avoid;
+	text-align: center;
+}
+
+.section_head img { width: 50%; }
+
+.section_num
+{
+	display: block;
+	font-size: 0.8em;
+}
+
+.chap_num
+{
+	display: table;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.chap_num_img_left
+{
+	height: auto;
+	width: 60px;
+}
+
+.chap_num_img_right
+{
+	height: auto;
+	width: 30px;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+.chap_title
+{
+	margin-top: 0;
+	font-weight: normal;
+	display: block;
+}
+
+.prelim_head { text-align: center; }
+
+.chap_head
+{
+	page-break-inside: avoid;
+	text-align: center;
+}
+
+.chap_img
+{
+	text-align: center;
+	margin-top: 1em;
+}
+
+.chap_img img { width: 30%; }
+
+blockquote
+{
+	padding: 0 2em;
+	margin: 1em 0;
+	border: none;
+	font-family: sans-serif;
+}
+
+blockquote p
+{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+li
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* MANUAL LIST */
+.list_lv1 { margin: 1em 0; }
+
+.list
+{
+	display: table;
+	width: 95%;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+.list_num
+{
+	display: table-cell;
+	width: 1.5em;
+	/* 	border: 1px solid red; */
+}
+
+.list_num img
+{
+	height: .8em;
+	width: auto;
+}
+
+.spab { margin-top: 1em; }
+
+sup a, sup
+{
+	text-decoration: none !important;
+	font-size: 0.8em;
+}
+
+sub
+{
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.bold_italic
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+.verse_title
+{
+	font-weight: bold;
+	margin-bottom: 0.75em;
+}
+
+.imprint .tp_logo
+{
+	margin: 0 auto;
+	text-align: center;
+	width: 175px;
+}
+
+.imprint p { font-size: .8em; }
+img { width: 100%; }
+
+.italic
+{
+	font-style: italic;
+	font-weight: normal;
+}
+
+.star
+{
+	display: inline;
+	max-width: 0.9em;
+}
+
+.spab { margin-top: 15px; }
+
+.tp_full, .tp_half
+{
+	text-align: center;
+	margin: 15% auto;
+}
+
+.tp_full img { width: 80%; }
+.tp_half img { max-width: 60%; }
+
+.box_1, .box_dotted
+{
+	padding: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 30px;
+}
+
+.box_1
+{
+	border: 2px solid #333;
+	background-color: #ECECEC;
+}
+
+.box_1 p:first-child { margin-top: 0; }
+
+.box_dotted
+{
+	border: 8px dotted #808080;
+	background: url(../Images/twirl_2.png) no-repeat center center fixed #D5DBDB;
+	background-size: cover;
+}
+
+.box_dotted p:first-child { margin-top: 0; }
+.box_dotted h5:first-child { margin-top: 0; }
+
+.body_seperator
+{
+	text-align: center;
+	margin: 1em auto;
+}
+
+.body_seperator img { width: 30%; }
+.song { page-break-inside: avoid; }
+
+.song_title
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+.song_verse
+{
+	margin-top: 0;
+	text-align: center;
+}
+
+.song_title img
+{
+	display: inline;
+	height: 1em;
+	width: auto;
+	margin: 0 1em;
+}
+
+.song_verse img
+{
+	display: inline;
+	height: 1em;
+	width: auto;
+	margin: 0 1em;
+}
+
+.poem { margin: 2em 1em; }
+.poem_title { margin-bottom: .5em; }
+
+.poem_body
+{
+	margin: 0 1em;
+	text-indent: -1em;
+}
+
+.poem_author { margin-top: .5em; }
+
+.cover_img
+{
+	width: 100%;
+	height: auto;
+}
+
+.cover_img img { width: 100%; }
+.script_body_first, .script_body_ind { font-family: cursive, sans-serif; }
+
+.fn_anchor
+{
+.fn_anchor
+{
+	vertical-align: super;
+	font-size: .8em;
+	padding-left: .2em;
+	padding-right: .2em;
+	color: inherit;
+}
+
